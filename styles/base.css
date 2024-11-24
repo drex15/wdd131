@@ -1,8 +1,8 @@
 /* Basic Styling */
 * {
     box-sizing: border-box;
-    margin: 10;
-    padding: 2;
+    margin: 10 0;
+    padding: 2 0;
 }
 
 body {
@@ -24,7 +24,7 @@ header {
     background-color: #3B7EA1;
     color: #fff;
     text-align: center;
-    padding: 1rem 2;
+    padding: 1rem 2 0;
 }
 
 header h1 span {
