@@ -100,7 +100,7 @@ main {
 
 /* Footer Styling */
 footer {
-    background-color: #3B7EA1;
+    background-color: #2b5c7e;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -113,7 +113,7 @@ footer p {
 
 #lastModified {
     font-size: 0.9rem;
-    color: #ffd700;
+    color: #ffcc33;
 }
 
 /* Utility Classes */
