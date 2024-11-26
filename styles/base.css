@@ -47,7 +47,7 @@ nav a {
     text-decoration: none;
     display: flex;
     flex: auto;
-    text-align: center;
+    justify-content: center;
 }
 
 nav a:hover {

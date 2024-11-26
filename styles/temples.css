@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Header Styling */
+header {
+  background-color: #4A006E;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0px;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: #4A006E;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Main Section Styling */
+main {
+  text-align: center;
+  padding: 2rem;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Temple Gallery Styling */
+.temples-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default 3 columns */
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.temples-gallery figure {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.temples-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.temples-gallery figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #4A006E;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background-color: #4A006E;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .temples-gallery {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+
+/* Keep hamburger in place when nav is active */
+header:has(nav.active) h1 {
+  visibility: hidden; /* Hides the text but keeps the space occupied */
+}
+
