@@ -3,5 +3,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("currentyear").textContent = new Date().getFullYear();
 
     // Set the last modified date
-    document.getElementById("lastModified").textContent = "Last Modification: " + document.lastModified;
+    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
 });

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Mustapha Ojuenimala - Overview of dynamic web design and development fundamentals.">
+    <meta name="author" content="Mustapha Ojuenimala">
+    <meta name="description" content="Facts aboutt Nigeria">
+    <title>Country page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.jpeg" media="(min-width: 601px)">
+                <img src="images/hero-small.jpeg" alt="people dancing" width="480" height="720">
+            </picture>
+        </section>
+
+        <section id="data">
+            <h2>Data</h2>
+            <div class="information" id="data-info">
+                <h3>Area:</h3>
+                    <p>923,769 sq km</p>
+                <h3>Population:</h3>
+                    <p>213,401,323</p>
+                <h3>Capital:</h3>
+                    <p>Abuja</p>
+                <h3>Languages:</h3>
+                    <p id="languages"> 
+                        English<br>
+                        Hausa<br>
+                        Yoruba<br>
+                        Igbo<br>
+                    </p>
+                <h3>Currency:</h3>
+                    <p>Naira (₦)</p>
+                <h3>Time Zone:</h3>
+                    <p>UTC+1</p>
+                <h3>Calling Code:</h3>
+                    <p>+234</p>
+                <h3>Internet TLD:</h3>
+                    <p>.ng</p>
+            </div>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <div class= "information" id="weather-info">
+                <h3>Temperature (°C):</h3>
+                    <p id="temp">20</p>
+                <h3>Conditions:</h3>
+                    <p id="conditions">Rainy</p>
+                <h3>Wind Speed (km/h):</h3>
+                    <p id="wind">50km/h</p>
+                <h3>Wind Chill (°C):</h3>
+                    <p id="windchill">Calculating...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Mustapha Ojuenimala | Nigeria</p>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+</html>
