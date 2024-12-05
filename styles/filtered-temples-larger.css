@@ -1,0 +1,7 @@
+/* Multi-column Layout for Larger Screens */
+@media (min-width: 768px) {
+    .temples-gallery {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  
