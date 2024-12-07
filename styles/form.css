@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header, footer {
+    background-color: #800000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label, legend {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #800000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a00000;
+}
+
+/* Fieldset Container Styling */
+fieldset {
+    border: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+/* Legend Styling */
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* White Box for Labels */
+.label-box {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Inner padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Layout inside the Box */
+.label-box div {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between items */
+}
+
+/* Checkbox and Radio Buttons */
+label {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between input and label text */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+/* Style the Product Selection Box */
+#productName {
+    width: 100%; /* Full width of the parent container */
+    height: 35px; /* Adjust height for larger box */
+    font-size: 1em; /* Slightly larger text for readability */
+    padding: 8px; /* Add padding inside the box */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #f9f9f9; /* Light background color */
+}
+
