@@ -1,0 +1,10 @@
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+
+    header, footer {
+        font-size: 0.9rem;
+    }
+}
