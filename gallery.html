@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Art and Culture Hub</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js"></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="project.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Articles</a></li>
+        <li><a href="attributions.html">Attributions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery-filter">
+      <h1>Gallery</h1>
+      <label for="filter">Filter by Category:</label>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="painting">Painting</option>
+        <option value="sculpture">Sculpture</option>
+        <option value="modern">Modern Art</option>
+        <option value="renaissance">Renaissance</option>
+      </select>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery-item" data-category="painting">
+        <img src="images/art1.jpg" alt="Painting 1" loading="lazy">
+        <p>Title: Starry Night</p>
+        <p>Artist: Vincent van Gogh</p>
+        <p>Year: 1889</p>
+        <p>Location: Museum of Modern Art, New York</p>
+      </div>
+      <div class="gallery-item" data-category="sculpture">
+        <img src="images/art2.jpg" alt="Sculpture 1" loading="lazy">
+        <p>Title: David</p>
+        <p>Artist: Michelangelo</p>
+      </div>
+      <div class="gallery-item" data-category="modern">
+        <img src="images/art3.jpg" alt="Modern Art 1" loading="lazy">
+        <p>Title: Composition VII</p>
+        <p>Artist: Wassily Kandinsky</p>
+        <p>Year: 1913</p>
+        <p>Location: Tretyakov Gallery, Moscow</p>
+      </div>
+      <div class="gallery-item" data-category="renaissance">
+        <img src="images/art4.jpg" alt="Renaissance Art 1" loading="lazy">
+        <p>Title: The Last Supper</p>
+        <p>Artist: Leonardo da Vinci</p>
+      </div>
+      <!-- Add more items as needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="currentyear"></span> | Mustapha Ojuenimala | Nigeria </p>
+    <span id="lastModified"></span> 
+    <br>
+    <a href="attributions.html">Attributions</a></p>
+  </footer>
+</body>
+</html>
